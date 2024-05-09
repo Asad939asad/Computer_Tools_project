@@ -214,7 +214,7 @@ ax[0].axis('off')
 
 plt.tight_layout()
 plt.show()
-
+#adding some important libraries
 from PIL import Image as pic
 import os
 import numpy as np
@@ -226,7 +226,7 @@ import tensorflow as tf
 
 # Load the pre-trained model
 # model = tf.keras.models.load_model('path_to_your_saved_model')
-
+#image url will be added here
 image_url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIWEWlU59P_1fXh25DQoJ9j8Lz96c778J0MxgDXMaNp6Rcd1a4hCz5LvznCjZtF3AOiKM&usqp=CAU"
 response = requests.get(image_url)
 
@@ -243,7 +243,7 @@ predicted_class_index = np.argmax(prediction)
 # Map class index to class name
 class_names = ['parasitized', 'uninfected']
 predicted_class_name = class_names[predicted_class_index]
-
+#prints the predicted class
 print(f"Predicted class: {predicted_class_name}")
 
 # Display the image and prediction
