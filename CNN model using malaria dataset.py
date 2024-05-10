@@ -257,3 +257,6 @@ ax[0].axis('off')
 
 plt.tight_layout()
 plt.show()
+
+
+print("Program successfully executed. Thank you for using our model")
